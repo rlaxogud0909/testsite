@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    z-index: 10;
 }
 
 #greeting-screen .container {
