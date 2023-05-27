@@ -3,7 +3,7 @@ const loginForm = document.getElementById("login-form");
 const loginInput = loginForm.querySelector("input");
 const loginPlaceholder = loginForm.querySelector("span");
 const greeting = document.getElementById("greeting");
-const title = document.querySelector(".todo-app h2:nth-child(1)");
+const title = document.querySelector(".todo-app #name");
 
 const USERNAME_KEY = "username";
 const HIDDEN_CLASSNAME = "hidden";
