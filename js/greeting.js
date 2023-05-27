@@ -3,6 +3,7 @@ const loginForm = document.getElementById("login-form");
 const loginInput = loginForm.querySelector("input");
 const loginPlaceholder = loginForm.querySelector("span");
 const greeting = document.getElementById("greeting");
+const title = document.querySelector(".todo-app h2");
 
 const USERNAME_KEY = "username";
 const HIDDEN_CLASSNAME = "hidden";
@@ -20,6 +21,8 @@ function paintGreetings() {
     const username = localStorage.getItem(USERNAME_KEY);
     greeting.innerText = `${username}님 환영합니다`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+
+    title.textContent = username;
 
     setTimeout(() => {
         greetingScreen.animate({ opacity: 0, visibility: "hidden" }, { duration: 500, fill: "forwards" });

@@ -1,10 +1,6 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 const screen_btn = document.querySelector(".todo-app h2 button");
-const title = document.querySelector(".todo-app h2");
-const username = localStorage.getItem("username");
-
-title.textContent = username;
 
 function fullScreen() {
     if (!document.fullscreenElement) {
